@@ -1,0 +1,319 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/56e3e27d55.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="tasty.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>atelier gourmand food Services Company</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="navbar">
+        
+
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="aboutUs.html">About</a>
+          </li>
+          <li><a href="menu.html">MENUS</a></li>
+          <li>
+            <a href="gallery.html">gallery</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button class="orderNow"><a>Order Now</a></button>
+        <div class="toggle_btn"><i class="fas fa-bars"></i></div>
+      </section>
+      <section class="mobileContainer animate__animated animate__fadeInBottomLeft">
+        <ul id="mobile">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="aboutUs.html">About</a>
+          </li>
+          <li><a href="menu.html">MENUS</a></li>
+          <li>
+            <a href="gallery.html">gallery</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <main>
+      <!--Slideshow container-->
+      <section class="slideshow-container">
+        <!--Full-width images with number and caption text-->
+        <section class="mySlides fade">
+          <section class="numbertext">1/4</section>
+          <img src="pictures/h1.jpg" alt="heroImage" />
+          <section class="text"><span>Burgoes Mela 52</span></section>
+        </section>
+        <section class="mySlides fade">
+          <section class="numbertext">2/11</section>
+          <img src="pictures/h2.jpg" alt="heroImage" />
+          <section class="text"><span>Chicken Waffles 75</span></section>
+        </section>
+
+        <section class="mySlides fade">
+          <section class="numbertext">3/11</section>
+          <img src="pictures/Chicken-Parmesan.jpg" alt="heroImage" />
+          <section class="text"><span>Chicken Parmesan 100</span></section>
+        </section>
+
+        <section class="mySlides fade">
+          <section class="numbertext">4/11</section>
+          <img src="pictures/h3.jpg" alt="heroImage" />
+          <section class="text">
+            <span>Chocolate Lava Cake 170</span>
+          </section>
+        </section>
+
+        <section class="mySlides fade">
+          <section class="numbertext">5/11</section>
+          <img src="pictures/h4 hamburger.jpg" alt="heroImage" />
+          <section class="text"><span>Hamburger 86</span></section>
+        </section>
+
+        <section class="mySlides fade">
+          <section class="numbertext">6/11</section>
+          <img src="pictures/bqb4.jpg" alt="heroImage" />
+          <section class="text"><span>Barbecue Ribs 164</span></section>
+        </section>
+
+        <section class="mySlides fade">
+          <section class="numbertext">7/11</section>
+          <img src="pictures/club-sandwich6.jpg" alt="heroImage" />
+          <section class="text"><span>Club Sandwich 94</span></section>
+        </section>
+
+        <section class="mySlides fade">
+          <section class="numbertext">8/11</section>
+          <img src="pictures/honey wfl7.jpg" alt="heroImage" />
+          <section class="text"><span>Honey Waffles 59</span></section>
+        </section>
+
+        <section class="mySlides fade">
+          <section class="numbertext">9/11</section>
+          <img src="pictures/french fries 8.jpg" alt="" />
+          <section class="text"><span>French Fries 23</span></section>
+        </section>
+
+        <section class="mySlides fade">
+          <section class="numbertext">10/11</section>
+          <img src="pictures/chimichzngas9.jpg" alt="" />
+          <section class="text"><span>Chimichangas 55</span></section>
+        </section>
+
+        <section class="mySlides fade">
+          <section class="numbertext">11/11</section>
+          <img src="pictures/macaroni 10.jpg" alt="" />
+          <section class="text"><span>Macaroni and Cheese 40</span></section>
+        </section>
+
+
+
+        <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
+
+
+
+        <!--Next and previous buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </section>
+      <br />
+
+      <!-- The dots/circles -->
+      <section style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+      </section>
+    </main>
+    <section class="aboutUs">
+      <div class="about">
+        <h1>About Us</h1>
+        <p>
+          Welcome to <span class="tasty">Atelier Gourmand</span> restaurant, where
+          every dish is a celebration of flavor. Our menu is packed with
+          mouth-watering options made from the freshest and highest quality
+          ingredients available. Whether you're stopping by for a quick bite or
+          settling in for a leisurely meal, we're here to make your dining
+          experience unforgettable. So come on in, sit down, and let us take you
+          on a culinary journey you won't forget.
+        </p>
+      </div>
+      <a href="aboutUs.html">Learn more</a>
+    </section>
+
+    <section id="home">
+      <section class="specialOrder first">
+        <div>
+          <h4>Special Services</h4>
+          <p>
+            Host your next party or gathering with ease by letting us cater for
+            your foods and drinks. Our special services includes, home orders
+            and event catering which features a delicious selection of dishes
+            that are sure to impress your guests and leave them satisfied.
+          </p>
+          <section class="inquiry">
+            <a href="contact.html">Inquiry</a>
+            <a id="reservation" href="#">Reservation</a>
+          </section>
+        </div>
+        <img src="pictures/buffet1.jpeg" alt="" />
+      </section>
+
+      <section class="specialOrder last">
+        <section>
+          <img src="pictures/buffet2" alt="" id="buffet" />
+        </section>
+
+        <div class="last">
+          <h4>Menus</h4>
+          <p>
+            Browse our menu and indulge in our mouth-watering dishes crafted
+            with the freshest ingredients to satisfy your cravings.
+          </p>
+          <div class="click">
+            <a class="clickHere" href="menu.html">CLick Here</a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div class="first-footer">
+        <section class="footer-left">
+          
+          <section class="footer-links">
+            <a href="index.html" class="link-1">Home</a>
+            <a href="aboutUs.html">About</a>
+            <a href="menu.html">Menus</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </section>
+        </section>
+
+        <section class="footer-center">
+          <div class="addresses">
+            <i class="fa-solid fa-location-dot"></i>
+            <address>casablanca,maarif,biranazarane</address>
+          </div>
+
+          <div class="addresses">
+            <i class="fa-solid fa-phone"></i>
+            <span>0659296787</span>
+          </div>
+
+          <div class="addresses">
+            <i class="fa fa-envelope"></i>
+            <a
+              class="email"
+              href="ateliergourmand.com"
+              id="lastEmail"
+            >
+              ateliergourmand.com
+            </a>
+          </div>
+
+          <div class="addresses">
+            <i class="fa-solid fa-clipboard-question"></i>
+            <a href="contact.html">Inquiry</a>
+          </div>
+
+          <div class="addresses">
+            <i class="fa-solid fa-receipt"></i>
+            <a href="#" id="reservation">Reservation</a>
+          </div>
+        </section>
+
+        <section class="footer-right">
+          <div class="socials">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+          </div>
+        </section>
+      </div>
+
+      
+    </footer>
+
+    <!-- Pop-up Cart Container -->
+    <section id="cartContainer">
+      <section id="cartSplitting">
+        <section id="cartContent">
+          <div class="cartSelection">
+          
+</html>
+

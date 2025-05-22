@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Page-atelier gourmand</title>
+    <script
+      src="https://kit.fontawesome.com/56e3e27d55.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=ARWKLYWAMpet80DqcnG1g8Tr47Kr9ANzcRlthrkQPjDgEy3QQKLm9N-lUm23OOwSeSHDGRvSqkdIZD_5"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="tasty.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="navbar">
+        
+
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="menu.html">MENUS</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="orderNow"><a>Order Now</a></button>
+        <div class="toggle_btn"><i class="fas fa-bars"></i></div>
+      </section>
+      <section class="mobileContainer animate__animated animate__fadeInBottomLeft">
+        <ul id="mobile">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="menu.html">MENUS</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+   
+        </ul>
+      </section>
+    </header>
+
+    <main id="menuMain">
+      <h4 class="ourgallery">Our Menus</h4>
+      <section class="menuImage">
+        <img src="pictures/home1.jpg" alt="menu page" />
+      </section>
+    </main>
+
+    <section class="menuSpan">
+      <span class="brun default-color foodTime">Brunch</span>
+      <span class="lun foodTime">Lunch</span>
+      <span class="din foodTime">Dinner</span>
+      <span class="wines foodTime">Wines & Cocktails</span> <br />
+      <span class="dess foodTime">Desserts</span>
+    </section>
+
+    <section class="mealOfTheDay">
+      <section id="brunch" class="meals">
+        <h3 class="mealName">BRUNCH</h3>
+
+        <section class="each-food">
+          <section class="food-images">
+            <h3>Eggs Benedict</h3>
+            <img src="pictures/eggs-benedict.jpg" alt="eggs" />
+            <p>
+              Poached eggs, toasted English muffins,Canadian bacon or ham,
+              hollandaise sauce, fresh greens.
+            </p>
+          </section>
+
+          <section class="food-images">
+            <h3>Buttermilk Pancake</h3>
+            <img src="pictures/pancake.jpg" alt="pancake" />
+            <p>
+              Flour, milk, eggs, butter,topped with fruits, nuts, chocolate
+              chips, or whipped cream.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Avocado Toast</h3>
+            <img src="pictures/avocado-toast.jpg" alt="avocado" />
+            <p>
+              Toasted bread, mashed avocado, cherry tomatoes, red pepper flakes,
+              feta cheese,drizzle of olive oil.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Chicken and Waffles</h3>
+            <img src="pictures/chicken-waffles.jpg" alt="chicken-waffles" />
+            <p>
+              Fried chicken, fluffy Belgian-style waffles, creamy-potato, honey.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Breakfast Burritos</h3>
+            <img
+              src="pictures/Breakfast-Burritos.jpg"
+              alt="Breakfast-Burritos"
+            />
+            <p>
+              Tortilla wrap filled with scrambled eggs, cheese, bacon or
+              sausage, various optional ingredients like diced tomatoes, onions,
+              bell peppers, avocado.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Smoked Salmon Bagelt</h3>
+            <img src="pictures/Smoked-Salmon.png" alt="Smoked-Salmon" />
+            <p>
+              Toasted bagel with cream cheese, smoked salmon slices, red onions,
+              capers, fresh dill or lemon wedges.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Belgian Waffles</h3>
+            <img src="pictures/belgian-waffles.jpeg" alt="belgian-waffles" />
+            <p>
+              Thick and light waffles made from a yeast-leavened batter,
+              powdered sugar, whipped cream, fresh fruits.
+            </p>
+          </section>
+        </section>
+      </section>
+
+      <section id="lunch" class="meals hide">
+        <h3 class="mealName">LUNCH</h3>
+
+        <section class="each-food">
+          <section class="food-images">
+            <h3>Hamburger</h3>
+            <img src="pictures/h4 hamburger.jpg" alt="hamburger" />
+            <p>
+              Beef patty garnished with lettuce, tomato, onion, pickles,
+              ketchup, mustard, and mayonnaise, served with a side of French
+              fries or a salad.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Caesar Salad</h3>
+            <img src="pictures/Caesar-Salad.jpg" alt="Caesar-Salad" />
+            <p>
+              Flavorful salad made with crisp romaine lettuce, Parmesan cheese,
+              croutons, grilled chicken, shrimp, or salmon.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Club Sandwich</h3>
+            <img src="pictures/club-sandwich6.jpg" alt="club-sandwich" />
+            <p>
+              Toasted bread filled with sliced turkey or chicken, bacon,
+              lettuce, tomato, and mayonnaise,French fries, coleslaw, or a
+              pickle.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Fish Tacos</h3>
+            <img src="pictures/fish-tacos.jpeg" alt="fish-tacos" />
+            <p>
+              Grilled or battered and fried fish (such as cod or mahi-mahi),
+              tortillas, shredded cabbage, salsa, avocado, lime, and a drizzle
+              of creamy sauce.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Caprese Panini</h3>
+            <img src="pictures/caprese-panini.jpg" alt="caprese-panini" />
+            <p>
+              Fresh mozzarella cheese, sliced tomatoes, basil leaves, and a
+              drizzle of balsamic glaze, ciabatta or focaccia bread, scrambled
+              eggs, cheese, bacon or sausage,onions, bell peppers, avocado.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Chicken Caesar Wrap</h3>
+            <img
+              src="pictures/Chicken-Caesar-Wraps.jpg"
+              alt="Chicken-Caesar-Wraps"
+            />
+            <p>
+              grilled or seasoned chicken, romaine lettuce, Parmesan cheese,
+              Caesar dressing wrapped in a tortilla.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>BBQ Ribs</h3>
+            <img src="pictures/bqb4.jpg" alt="bbq-ribs" />
+            <p>
+              Ribs slow-cooked or grilled and smothered in tangy barbecue sauce,
+              coleslaw, cornbread, baked beans or macaroni and cheese.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Cobb Salad</h3>
+            <img src="pictures/cobb-salad.jpg" alt="cobb-salad" />
+            <p>
+              Mixed greens, grilled chicken, bacon, hard-boiled eggs, avocado,
+              tomatoes, blue cheese crumbles.
+            </p>
+          </section>
+        </section>
+      </section>
+
+      <section id="dinner" class="meals hide">
+        <h3 class="mealName">DINNER</h3>
+
+        <section class="each-food">
+          <section class="food-images">
+            <h3>Steakhouse Steak</h3>
+            <img
+              src="pictures/Steak-Houses.jpg"
+              alt="Steak-Houses"
+            />
+            <p>
+              Typically features a juicy and tender cut of beef, such as ribeye,
+              New York strip, or filet mignon, peppercorn or béarnaise, mashed
+              potatoes, grilled vegetables, or a salad.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Lobster Roll</h3>
+            <img src="pictures/lobster-roll.jpg" alt="lobster-roll" />
+            <p>Lobster, mayonnaise, celery, and seasonings, French fries.</p>
+          </section>
+          <section class="food-images">
+            <h3>Pasta Carbonara</h3>
+            <img
+              src="pictures/Spaghetti-Carbonara.jpg"
+              alt="Spaghetti-Carbonara"
+            />
+            <p>
+              Spaghetti or fettuccine, eggs, Parmesan cheese, pancetta or bacon,
+              and black pepper.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Sushi Platter</h3>
+            <img src="pictures/sushi-platter.jpg" alt="sushi-platter" />
+            <p>
+              Fried chicken, fluffy Belgian-style waffles, creamy-potato, honey.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Chicken Parmesan</h3>
+            <img src="pictures/Chicken-Parmesan.jpg" alt="Chicken-Parmesan" />
+            <p>
+              Tortilla wrap filled with scrambled eggs, cheese, bacon or
+              sausage, various optional ingredients like diced tomatoes, onions,
+              bell peppers, avocado.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Shrimp Scampi</h3>
+            <img src="pictures/Shrimp-Scampi.jpg" alt="Shrimp-Scampi" />
+            <p>
+              Toasted bagel with cream cheese, smoked salmon slices, red onions,
+              capers, fresh dill or lemon wedges.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Tacos Al Pastor</h3>
+            <img src="pictures/al-pastor.jpg" alt="al-pastor" />
+            <p>
+              Thick and light waffles made from a yeast-leavened batter,
+              powdered sugar, whipped cream, fresh fruits.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Grilled Salmon</h3>
+            <img src="pictures/grilled-salmon.jpg" alt="grilled-salmon" />
+            <p>
+              Sushi rolls and nigiri, salmon nigiri, and more, served with soy
+              sauce, wasabi, and pickled ginger.
+            </p>
+          </section>
+        </section>
+      </section>
+
+      <section id="wineCocktails" class="meals hide">
+        <h3 class="mealName">WINES AND COCKTAILS</h3>
+
+        <section class="each-food">
+          <section class="food-images">
+            <h3>Cabernet Sauvignon</h3>
+            <img
+              src="pictures/cabernet-sauvignon.jpg"
+              alt="cabernet-sauvignon"
+            />
+            <p>Red wine with rich flavors of blackcurrant, blackberry.</p>
+          </section>
+          <section class="food-images">
+            <h3>Chardonnay</h3>
+            <img
+              src="pictures/bottle-white-wine-glass-.jpg"
+              alt="Chardonnay"
+            />
+            <p>
+              A versatile white wine with flavors ranging from crisp apple and
+              citrus to buttery notes and vanilla.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Sauvignon Blanc</h3>
+            <img src="pictures/sauvignon-blanc.jpg" alt="sauvignon-blanc" />
+            <p>
+              A refreshing white wine with vibrant acidity and flavors of
+              citrus, tropical fruits, and grassy notes.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Margarita</h3>
+            <img src="pictures/The-Best-Margarita.jpg" alt="Margarita" />
+            <p>
+              A classic cocktail made with tequila, lime juice, and orange
+              liqueur (such as triple sec or Cointreau).
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Mojito</h3>
+            <img src="pictures/mojito-cocktails.jpg" alt="mojito-cocktails" />
+            <p>
+              A refreshing cocktail made with white rum, lime juice, simple
+              syrup, fresh mint leaves, and club soda.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Manhattan</h3>
+            <img src="pictures/manhantan.jpg" alt="manhantan" />
+            <p>
+              A classic cocktail made with whiskey (typically rye), sweet
+              vermouth, and bitters. It is stirred with ice and strained into a
+              cocktail glass, often garnished with a cherry.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Merlot</h3>
+            <img src="pictures/merlot.jpg" alt="merlot" />
+            <p>
+              A medium-bodied red wine with flavors of black cherry, plum, and
+              chocolate.
+            </p>
+          </section>
+        </section>
+      </section>
+
+      <section id="desserts" class="meals hide">
+        <h3 class="mealName">DESSERTS</h3>
+
+        <section class="each-food">
+          <section class="food-images">
+            <h3>Apple Pie</h3>
+            <img src="pictures/apple-pie.jpg" alt="apple-pie" />
+            <p>
+              Flaky pastry crust filled with sweet and spiced apple slices,
+              scoop of vanilla ice cream or a dollop of whipped cream.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Chocolate Lava Cake</h3>
+            <img
+              src="pictures/chocolate-lava-cake.jpg"
+              alt="chocolate-lava-cake"
+            />
+            <p>
+              Moist chocolate cake with a gooey, molten chocolate center, scoop
+              of vanilla ice cream or a drizzle of raspberry sauce.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>New York Cheesecake</h3>
+            <img src="pictures/cheese-cake.jpg" alt="cheese-cake" />
+            <p>
+              Cheesecake made with cream cheese, eggs, sugar, and a graham
+              cracker crust.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Crème Brûlée</h3>
+            <img src="pictures/creme-brulee.jpg" alt="creme-brulee" />
+            <p>
+              A classic French dessert consisting of a smooth and creamy custard
+              topped with a caramelized sugar crust.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Key Lime Pie</h3>
+            <img src="pictures/Key-Lime-Pie.jpg" alt="Key-Lime-Pie" />
+            <p>
+              A refreshing and tangy dessert made with a sweet and tart filling
+              primarily composed of key lime juice and condensed milk, served in
+              a buttery graham cracker crust.
+            </p>
+          </section>
+          <section class="food-images">
+            <h3>Brownie Sundae</h3>
+            <img src="pictures/brownie-sundae.jpg" alt="brownie-sundae" />
+            <p>
+              A delightful combination of warm, fudgy brownies topped with a
+              scoop (or multiple scoops) of ice cream, drizzled with chocolate
+              sauce, and garnished with whipped cream, nuts, and a cherry.
+            </p>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <footer>
+      <div class="first-footer">
+        <section class="footer-left">
+          
+          <section class="footer-links">
+            <a href="index.html" class="link-1">Home</a>
+            <a href="aboutUs.html">About</a>
+            <a href="menu.html">Menus</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </section>
+        </section>
+
+        <section class="footer-center">
+          <div class="addresses">
+            <i class="fa-solid fa-location-dot"></i>
+            <address>casablanca,maarif,biranzarane</address>
+          </div>
+
+          <div class="addresses">
+            <i class="fa-solid fa-phone"></i>
+            <span>0659296787</span>
+          </div>
+
+          <div class="addresses">
+            <i class="fa fa-envelope"></i>
+            <a
+              class="email"
+              href="mailto:support@tastyyumzie.com"
+              id="lastEmail"
+            >
+              ateliergourmand@gmail.com
+            </a>
+          </div>
+
+          <div class="addresses">
+            <i class="fa-solid fa-clipboard-question"></i>
+            <a href="contact.html">Inquiry</a>
+          </div>
+
+          <div class="addresses">
+            <i class="fa-solid fa-receipt"></i>
+            <a href="#" id="reservation">Reservation</a>
+          </div>
+        </section>
+
+        <section class="footer-right">
+          <div class="socials">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+          </div>
+        </section>
+      </div>
+
+     
+    </footer>
+    <!-- Pop-up Cart Container -->
+    <section id="cartContainer">
+      <section id="cartSplitting">
+        <section id="cartContent">
+          <div class="cartSelection">
+           
+    
+  
+  
+    <script>
+  function showMeals() {
+    const brunch = document.getElementById("brunch-meals");
+    const lunch = document.getElementById("lunch-meals");
+    const dinner = document.getElementById("dinner-meals");
+
+    // Tout masquer
+    [brunch, lunch, dinner].forEach(el => {
+      if (el) el.style.display = "none";
+    });
+
+    // Afficher la bonne section
+    const selected = document.getElementById("time").value;
+
+    if (selected === "brunch" && brunch) brunch.style.display = "block";
+    if (selected === "lunch" && lunch) lunch.style.display = "block";
+    if (selected === "dinner" && dinner) dinner.style.display = "block";
+  }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".foodTime");
+    const meals = document.querySelectorAll(".meals");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        // Supprimer la classe 'default-color' de tous les boutons
+        buttons.forEach((btn) => btn.classList.remove("default-color"));
+        // Ajouter la classe 'default-color' au bouton actif
+        button.classList.add("default-color");
+
+        // Cacher toutes les sections repas
+        meals.forEach((meal) => meal.classList.add("hide"));
+
+        // Afficher la section correspondante
+        const id = button.classList[0]; // ex: "brun", "lun", etc.
+        const sectionToShow = {
+          brun: "brunch",
+          lun: "lunch",
+          din: "dinner",
+          wines: "wineCocktails",
+          dess: "desserts",
+        }[id];
+
+        if (sectionToShow) {
+          document.getElementById(sectionToShow).classList.remove("hide");
+        }
+      });
+    });
+  });
+</script>
+  </body>
+</html>
+
+<script src="../Script/menu.js"></script>
+<script>
+  function showMeals() {
+    const brunch = document.getElementById("brunch-meals");
+    const lunch = document.getElementById("lunch-meals");
+    const dinner = document.getElementById("dinner-meals");
+    const wines = document.getElementById("wines-meals");
+    const desserts = document.getElementById("desserts-meals");
+
+    // Masquer tous les menus
+    [brunch, lunch, dinner].forEach((el) => {
+      if (el) el.style.display = "none";
+    });
+
+    const selected = document.getElementById("time").value;
+
+    switch (selected) {
+      case "brunch":
+        brunch.style.display = "block";
+        break;
+      case "lunch":
+        lunch.style.display = "block";
+        break;
+      case "dinner":
+        dinner.style.display = "block";
+        break;
+      case "wines&Cocktails":
+        if (wines) wines.style.display = "block";
+        break;
+      case "desserts":
+        if (desserts) desserts.style.display = "block";
+        break;
+    }
+  }
+</script>
